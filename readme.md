@@ -28,6 +28,30 @@ I will provide a shell script for the fellas who are not a big fan of [Docker](h
 
 * In your favourite browser (which can normally render Swagger UI), hit `http://localhost:9000`, there you go.
 
+## Customise
+
+### YAML document
+
+Just copy and paste your YAML API document in (preserve the name `swagger.yaml`), then you are good to go.
+
+### Access Control
+
+For now just replace the user credentials in `index.js`. I will take care of the case of multiple users later e.g. to provide a super naive portal for doing this.
+
+To be specific, in `index.js`
+
+```
+app.use(basicauth({
+	users: {
+		'PUT_YOUR_USERNAME_HERE': 'PUT_YOUR_PASSWORD_HERE'
+	},
+	challenge: true,
+	realm: 'node-swagger-ui'
+}));
+```
+
+Or one step further, I am thinking of putting it into some environment variables with default values.
+
 ## Future Changes
 
 * Find an easier way to create, store and manage user signin credentials
