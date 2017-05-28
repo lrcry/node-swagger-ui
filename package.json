@@ -1,0 +1,17 @@
+{
+  "name": "austop-cms-api.swaggerdoc",
+  "version": "1.0.0",
+  "description": "API Swagger doc for AusTop CMS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ecstatic": "^2.1.0",
+    "express": "^4.15.3",
+    "express-basic-auth": "^1.0.2",
+    "js-yaml": "^3.8.4"
+  }
+}
