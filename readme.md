@@ -1,5 +1,7 @@
 # Node Swagger UI
 
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
+
 Swagger UI served by Node server with Basic Authentication support to protect your API document in a public environment.
 
 ## Author
